@@ -1,5 +1,11 @@
 {
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
   "editor.defaultFormatter": null,
+  "workbench.activityBar.location": "hidden",
+  "editor.minimap.enabled": false,
+  "explorer.fileNesting.enabled": true,
   "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc][css][graphql]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
