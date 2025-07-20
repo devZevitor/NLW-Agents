@@ -8,6 +8,13 @@
       "when": 1752257875030,
       "tag": "0000_bent_corsair",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1753021095368,
+      "tag": "0001_third_prodigy",
+      "breakpoints": true
     }
   ]
 }

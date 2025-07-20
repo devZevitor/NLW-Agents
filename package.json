@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node --env-file .env --experimental-strip-types --no-warnings src/server.ts",
     "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.ts",
-    "db:seed": "node --env-file .env --experimental-strip-types --no-warnings src/db/seed.ts"
+    "db:seed": "node --env-file .env --experimental-strip-types --no-warnings src/db/seed.ts",
+    "db:migrate": "npx drizzle-kit migrate",
+    "db:generate": "npx drizzle-kit generate"
   },
   "keywords": [],
   "author": "",

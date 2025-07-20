@@ -1,6 +1,37 @@
-@baseURL = http://localhost:3333
+ @baseURL = http://localhost:3333
 
 GET {{baseURL}}/helth
 
+
 ###
+# @name getRoom
 GET {{baseURL}}/rooms
+
+###
+# @name createRoom
+POST {{baseURL}}/rooms
+Content-Type: application/json
+
+{
+    "name": "Sala de teste",
+    "description": "Essa é uma sala de teste"
+}
+
+###
+@roomId = {{createRoom.response.body.$.roomId}}
+
+
+###
+# @name getRoomQuestion
+GET {{baseURL}}/rooms/{{roomId}}/question
+
+
+###
+# @name createQuestion
+POST {{baseURL}}/rooms/{{roomId}}/question
+Content-Type: application/json
+
+{
+    "question": "O que é react?"
+}
+
