@@ -17,7 +17,7 @@ export const GetRoomsQuestion:FastifyPluginAsyncZod = async (server)=> {
         const data = await db
         .select({
             id: schema.questions.id,
-            questions: schema.questions.question,
+            question: schema.questions.question,
             answer: schema.questions.answer,
             created_at: schema.questions.created_at
         })

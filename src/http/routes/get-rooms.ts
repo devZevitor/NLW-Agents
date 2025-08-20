@@ -5,7 +5,7 @@ import {count,eq} from "drizzle-orm"
 
 export const GetRooms:FastifyPluginAsyncZod = async (server)=> {
     server.get("/rooms", async () => {
-        return await  db
+        return await db
         .select({
             id: schema.rooms.id,
             name: schema.rooms.name,
